@@ -1,4 +1,299 @@
 body {
     background-color: white;
-   
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color:#FF0BAC; 
+    padding: 10px 0px;
+    height:50px;
+    text-align:center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+header img{
+    height:50px;
+    width:50px;
+}
+
+.intro{
+    margin: 200px auto 0px;
+}
+.intro ul{
+    white-space: nowrap;
+    margin: 0 auto;
+    width:1200px;
+
+}
+.intro li{
+    display: inline-block;
+    width: 50%;
+    height:auto;
+    text-align:center;
+    vertical-align:top;
+
+}
+.intro-para .intro-greeting{
+    color: #7B163E;
+    font-size: 45px;
+}
+.intro-para{
+    padding: 5% 0;
+    font-size: 20px;
+    font-weight: 15px;
+    white-space: normal;
+}
+
+.intro li img{
+    max-width:100%;
+  
+}
+
+.web-dd{
+
+    background-color: ghostwhite;
+    margin: 75px auto 0px;
+    
+}
+.web-dd ul{
+    white-space: nowrap;
+    margin: 0 auto;
+    width:1200px;
+    padding: 100px 0 100px;
+
+}
+.web-dd li{
+    display: inline-block;
+    width: 50%;
+    height:auto;
+    text-align:center;
+    vertical-align:top;
+
+}
+.web-dd-para .web-dd-greeting{
+    color: #FF0BAC;
+    font-size: 30px;
+}
+.web-dd-para{
+    padding: 1% 0;
+    font-size: 20px;
+    white-space: normal;
+}
+
+.web-dd li img{
+    max-width:100%;
+  
+}
+
+.let-us-connect{
+    background-color:#7B163E;
+    color: white;
+
+}
+.let-us-connect ul{
+    white-space: nowrap;
+    margin: 0 auto;
+    width:1200px;
+    padding: 20px 0 20px;
+
+}
+
+.let-us-connect li{
+    display: inline-block;
+    width: 25%;
+    height:auto;
+    text-align:center;
+    vertical-align:top;
+}
+
+.let-us-connect li img{
+    width:50px;
+    height:50px;
+    border-radius: 10px;
+}
+
+footer{
+    padding: 5px 0px;
+    background-color:#FF0BAC;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    clear:both;
+}
+
+@media screen and (max-width: 1260px){
+    
+    .intro ul{
+        width: 80%;
+     }
+
+    .web-dd ul{
+        width:80%;
+    }
+    
+    .let-us-connect ul{
+        width:80%;
+    }
+}
+@media screen and (max-width:1120px){
+    .intro li img{
+        padding-left: 30px;
+    }
+
+    .web-dd li img{
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+
+    .web-dd ul{
+        margin: 10px auto;
+        padding: 0px 10px;    
+    }
+    .web-dd li{
+        display: block;
+        width: 100%;
+        height:auto;
+    
+    }
+    .web-dd-para .web-dd-greeting{
+        font-size: 30px;
+    }
+    .web-dd-para{
+        font-size: 18px;
+    }
+
+    .web-dd li img{
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+
+
+}
+@media screen and (max-width:900px){
+    .intro{
+        margin: 150px auto 0px;
+    }
+
+    .intro-para .intro-greeting{
+        font-size: 35px;
+    }
+    .intro-para{
+        padding: 5% 0;
+        font-size: 15px;
+    }
+    .intro li img{
+        max-width:auto;
+    }
+    .web-dd{
+        margin: 100px auto 0px;
+        padding-bottom: 100px;
+    }
+
+    .web-dd-para .web-dd-greeting{
+        font-size: 30px;
+    }
+    .web-dd-para{
+        padding: 5% 0;
+        font-size: 15px;
+    }
+    .web-dd li img{
+        max-width:auto;
+    }
+    .let-us-connect li{
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .intro{
+        margin: 100px auto 50px;
+    }
+    .intro ul{
+        margin: 10px auto;
+        padding: 0px 10px;    
+    }
+    .intro li{
+        display: block;
+        width: 100%;
+        height:auto;
+    
+    }
+    .intro-para .intro-greeting{
+        font-size: 30px;
+    }
+    .intro-para{
+        font-size: 18px;
+    }
+    
+    .intro li img{
+        padding-top:inherit;
+        padding-left:0;
+    }
+
+
+    .let-us-connect li div{
+        white-space: normal;
+        word-break: auto;
+    }
+
+}
+
+@media screen and (max-width: 470px){
+
+    .intro-para .intro-greeting{
+        font-size: 25px;
+    }
+    .intro-para{
+        font-size: 16px;
+    }
+    .intro li img{
+        padding-top:20px;
+
+    }
+    .web-dd {
+        margin-top:50px;
+    }
+    .web-dd-para .web-dd-greeting{
+        font-size: 25px;
+    }
+    .web-dd-para{
+        font-size: 16px;
+    }
+
+    .web-dd li img{
+        padding-top: 50px;
+    }
+
+    .let-us-connect ul{
+        white-space: normal;
+        padding: 10px 10px;
+    
+    }
+    
+    .let-us-connect li{
+        padding: 20px 0 20px;
+        display: inline-block;
+        width: 48%;
+        height:auto;
+        text-align:center;
+
+    }
+}
+
+@media screen and (max-width: 470px){
+
+    .intro-para{
+        font-size: 14px;
+    }
 }
