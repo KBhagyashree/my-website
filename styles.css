@@ -3,6 +3,20 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.292);        /* color of the tracking area */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #ff0bae6e;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    /*border: 3px solid ghostwhite;  /* creates padding around scroll thumb */
 }
 
 header {
@@ -295,5 +309,104 @@ footer{
 
     .intro-para{
         font-size: 14px;
+    }
+}
+
+.about-me{
+    background-image: url("BG8.jpg");
+}
+
+.about-me-heading{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    text-align: center;
+    color:#7B163E;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.about-me-collage {
+    padding: 20px 15% 60px;
+    max-width: 1200px;
+}
+.about-me-collage div{
+    display: inline-block;
+}
+
+div.about-me-image{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.about-me-image img{
+    max-width: 100%;
+    max-height: 72vh;
+    border: 10px solid white;
+    /* width: 80vw; */
+}
+
+.about-me-para{
+    white-space: normal;
+    vertical-align: top;
+    text-align: left;
+    max-width: 60%;
+    padding-left: 45px;
+    height: auto;
+    color:#7B163E;
+    font-weight: 500;
+    word-break: normal;
+}
+
+@media screen and (max-width: 1300px){
+
+    .about-me-collage {
+        padding: 20px 5%;
+        width: 90%;
+    }
+    .about-me-para{
+        padding-left: 20px;
+     
+    }
+}
+
+@media screen and (max-width: 1215px){
+
+    .about-me-para{
+        padding-left: 20px;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .about-me-collage div{
+        display: block;
+    }
+    div.about-me-image{
+        text-align: center;
+    
+    }
+    .about-me-para{
+        text-align: center;
+        max-width: 90vw;
+        padding: 20px 5vw;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .about-me-image img{
+        max-width: 80vw;
+        max-height: auto;
+    }
+    div .about-me-image{
+        margin: 0px 5vw;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .about-me-image img{
+        max-width: 80vw;
     }
 }
