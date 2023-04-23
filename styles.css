@@ -19,21 +19,189 @@ body::-webkit-scrollbar-thumb {
     /*border: 3px solid ghostwhite;  /* creates padding around scroll thumb */
 }
 
-header {
-    background-color:#FF0BAC; 
-    padding: 10px 0px;
-    height:50px;
-    text-align:center;
+header{
     position: fixed;
-    width: 100%;
     z-index: 1;
     left: 0;
     top: 0;
+    background-color:#FF0BAC;
+    height: 70px;
+    width: 100%;
+}
+.home-button{
+    background-color:#FF0BAC;
+    height:50px;
+    text-align:left;
+    display: inline-block;
+    width: 39vw;
+    padding: 10px 0px 4px;
 }
 
-header img{
+.home-button img{
     height:50px;
     width:50px;
+    padding-left: 10%;
+}
+.nav-menu {
+    display:none;
+}
+@media screen and (max-width: 500px){
+    
+    header{
+        height: 60px;
+    }
+    .home-button{
+        height: 40px;
+    }
+    .home-button img{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+.nav{
+    display: inline-block;
+    vertical-align: top;
+    width: 59vw;
+}
+
+.nav div{
+    display: inline-block;
+    width: 10vw;
+    text-align:center;
+    font-weight: 600;
+    color: white;
+    background-color:#FF0BAC;
+    padding: 24px 0px 22px;
+}
+
+.nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav div a:hover{
+    color: #FF0BAC;
+    background-color: white;
+
+}
+
+.nav div:hover{
+    background-color: white;
+}
+
+
+@media screen and (max-width:960px){
+    .home-button{
+        width:29vw;
+    }
+    .nav{
+        width: 69vw;
+    }
+    .nav div{
+        width: 13vw;
+    }
+}
+
+@media screen and (max-width:730px){
+    .home-button{
+        width: 90vw;
+    }
+    .nav{
+        width: 84vw;
+    }
+    .nav div{
+        width: 16vw;
+    }
+}
+
+@media screen and (max-width: 735px){
+    /*
+    header{
+        height: auto;
+    }
+*/
+
+.home-button{
+    display: inline-block;
+    vertical-align: top;
+    width: 90vw;
+}
+.home-button img{
+    vertical-align: top;
+    padding-left: 4vw;
+}
+
+.nav {
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+    display: block;
+}
+
+.nav.open{
+    height: auto;
+}
+
+.nav div{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid white;
+    padding: 5px 10px;
+}
+.nav-menu{
+    display:inline-block;
+    /* background-color:#7B163E; */
+    height: auto;
+    padding: 16px 0px;
+    width: auto;
+    width: 45px;
+    height: 38px;
+    vertical-align: top;
+}
+.nav-menu img{
+    width: 38px;
+    height: 35px;
+}
+}
+
+@media screen and (max-width: 575px){
+    .home-button{
+        width: 89vw;
+    }
+
+    .nav-menu{
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .home-button{
+        width: 87vw;
+    }
+
+}
+@media screen and (max-width: 525px){
+    .home-button{
+        width: 85vw;
+    }
+
+}
+
+@media screen and (max-width: 385px){
+    .home-button{
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+    .home-button{
+        width: 79vw;
+    }
+
 }
 
 .intro{
