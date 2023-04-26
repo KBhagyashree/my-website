@@ -1025,7 +1025,7 @@ div.about-me-image{
     }
 }
 
-@media screen and max-width(500px){
+@media screen and (max-width:500px){
     .cummins-section ul{
         width: 90vw;
         padding: 10px 4vw;
