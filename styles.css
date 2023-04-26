@@ -963,4 +963,81 @@ div.about-me-image{
     }
 }
 
+.cummins-section{
+    padding:20px 0px;
+    background-color:beige;
+    color:rgb(6, 39, 116);
+    text-align: left;
+}
+
+.cummins-info{
+    font-weight: bold;
+    width: 80vw;
+    padding: 0px 9vw;
+    font-size: 40px;
+    
+}
+.cummins-info p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.cummins-section ul{
+    width: 80vw;
+    padding: 10px 9vw;
+}
+
+.cummins-section ul li{
+    display: inline-block;
+    width: 29%;
+    padding: 10px;
+    border:1px solid rgb(6, 39, 116);
+    border-left: 5px solid rgb(6, 39, 116);
+    margin: 5px;
+    font-weight:600;
+}
+.cummins-img{
+    text-align: center;
+}
+
+.cummins-img img{
+    width: 50vw;
+    padding: 5px 24.5vw;
+}
+
+@media screen and (max-width: 1120px){
+    .cummins-section ul li{
+        width: 42%;
+    }
+    .cummins-img img{
+        width: 70vw;
+        padding: 5px 14vw;
+    }
+}
+
+@media screen and (max-width: 775px){
+    .cummins-section ul li{
+        width: 80%;
+    }
+    .cummins-img img{
+        width: 80vw;
+        padding: 5px 9vw;
+    }
+}
+
+@media screen and max-width(500px){
+    .cummins-section ul{
+        width: 90vw;
+        padding: 10px 4vw;
+    }
+    .cummins-section ul li{
+        width: 96%;
+    }
+    .cummins-img img{
+        width: 90vw;
+        padding: 5px 4vw;
+    }
+}
+
+
 
