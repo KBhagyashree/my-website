@@ -1040,4 +1040,173 @@ div.about-me-image{
 }
 
 
+.projects-list{
+    margin-top: 100px;
+}
 
+.work-summary{
+    text-align: center;
+    font-weight: bold;
+    color:#7B163E;
+    font-size: 50px;
+    width: 70vw;
+    margin: 30px 15vw;
+}
+
+.work-summary p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.work-summary ul{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
+.projects{
+    width: 70vw; 
+    margin: 70px 15vw;
+}
+ul.project-tile{
+    height: 230px;
+    padding: 10px 1%;
+    border: 1px solid #FF0BAC;
+    border-left: 8px solid #FF0BAC;
+    margin-bottom: 60px;
+}
+
+.project-tile li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+li.project-img{
+    width: 39%;
+    text-align: center;
+   
+}
+
+li.project-summary {
+    width: 59%;
+    text-align: left;
+    line-height: 31px;
+}
+
+li.project-img img{
+    max-width: 100%;
+}
+
+span.title{
+    text-transform: uppercase;
+    color: #7B163E;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+span.type{
+    color: #FF0BAC;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+span.tech-skills{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1280px){
+    .work-summary{
+        width: 75vw;
+        margin: 30px 12vw;
+    }
+
+    .projects{
+        width: 75vw; 
+        margin: 70px 12vw;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .work-summary{
+        width: 80vw;
+        margin: 30px 10vw;
+    }
+
+    .projects{
+        width: 80vw; 
+        margin: 70px 10vw;
+    }
+    span.title{
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1060px){
+    ul.project-tile{
+        height: 280px;
+    }
+
+    li.project-img{
+        width: 39%;
+       
+    }
+    
+    li.project-summary {
+        width: 59%;         
+        line-height: 28px;
+    } 
+
+    .work-summary{
+        width: 85vw;
+        margin: 30px 7vw; 
+    }
+
+    .projects{
+        width: 85vw;
+        margin: 70px 7vw;
+    }
+    
+
+}
+
+@media screen and (max-width: 850px){
+    ul.project-tile{
+        height: 250px;
+    }
+    li.project-summary {
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    ul.project-tile{
+        height: auto;
+        padding: 0px;
+        margin: 0px 0px 60px;
+    }
+
+    li.project-img{
+        width: 99%;       
+    }
+    
+    li.project-summary {
+        width: 97%;
+        text-align: center;
+        padding: 1%;
+        line-height: 29px;
+    }
+    .work-summary{
+        width: 85vw;
+        padding: 30px 7vw; 
+        margin: 0px;
+    }
+
+    .projects{
+        width: 85vw;
+        padding: 70px 7vw;
+        margin: 0px;
+    }
+
+}
