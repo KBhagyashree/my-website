@@ -1,4 +1,5 @@
-html {
+
+html{
     scroll-behavior: smooth;
 }
 
@@ -223,7 +224,7 @@ header{
     height:auto;
     text-align:center;
     vertical-align:top;
-
+    line-height: 33px;
 }
 .intro-para .intro-greeting{
     color: #7B163E;
@@ -231,7 +232,7 @@ header{
 }
 .intro-para{
     padding: 5% 0;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 15px;
     white-space: normal;
 }
@@ -275,6 +276,92 @@ header{
 .web-dd li img{
     max-width:100%;
   
+}
+/*navigational brief */
+
+.nav-brief{
+
+    background-color: ghostwhite;
+    margin: 75px auto 0px;
+    
+}
+.nav-brief ul{
+    white-space: nowrap;
+    margin: 0 auto;
+    width:1200px;
+    padding: 100px 0 100px;
+
+}
+.nav-brief li{
+    display: inline-block;
+    width: 50%;
+    height:auto;
+    text-align:center;
+    vertical-align:top;
+}
+.nav-brief-para .nav-brief-greeting{
+    color: #FF0BAC;
+    font-size: 45px;
+}
+.nav-brief-para{
+    padding: 4% 0%;
+    font-size: 18px;
+    white-space: normal;
+    line-height: 30px;
+}
+
+.nav-brief li img{
+    max-width:100%;
+    transform: scale(.85);
+    /* vertical-align: top; */
+}
+
+@media screen and (max-width: 1285px){
+    .nav-brief ul{
+        margin: 0 5%;
+        padding: 100px 0 100px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .nav-brief-para .nav-brief-greeting{
+        font-size: 40px;
+    }
+    .nav-brief-para{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .nav-brief li{
+        display: block;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 700px){
+    
+    .nav-brief ul {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nav-brief li{
+        line-height: 28px;
+    }
+    .nav-brief li img{
+        transform: scale(1);
+    }
+    .nav-brief-para .nav-brief-greeting{
+        font-size: 25px;
+    }
+    .nav-brief-para{
+        font-size: 16px;
+    }
+
 }
 
 .let-us-connect{
@@ -447,6 +534,9 @@ footer{
         padding-top:20px;
 
     }
+    .intro li{
+        line-height: 28px;
+    }
     .web-dd {
         margin-top:50px;
     }
@@ -480,7 +570,8 @@ footer{
 @media screen and (max-width: 470px){
 
     .intro-para{
-        font-size: 14px;
+        font-size: 16px;
+        /* line-height: 22px; */
     }
 }
 
