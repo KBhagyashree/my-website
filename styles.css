@@ -29,8 +29,8 @@ header{
     z-index: 1;
     left: 0;
     top: 0;
-    /* background-color:#FF0BAC; */
-    background-color: #CE2384;
+    background-color:#FF0BAC;
+    /* background-color: #CE2384; */
     height: 70px;
     width: 100%;
 }
