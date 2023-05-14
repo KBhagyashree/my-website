@@ -210,7 +210,7 @@ header{
 }
 
 .intro{
-    margin: 200px auto 0px;
+    margin: 200px auto 100px;
 }
 .intro ul{
     white-space: nowrap;
@@ -281,9 +281,9 @@ header{
 
 .nav-brief{
 
-    background-color: ghostwhite;
-    margin: 75px auto 0px;
-    
+background-color: ghostwhite;
+
+/* margin: 75px auto 0px; */
 }
 .nav-brief ul{
     white-space: nowrap;
@@ -367,14 +367,13 @@ header{
 .let-us-connect{
     background-color:#7B163E;
     color: white;
-
+    text-align: center;
 }
 .let-us-connect ul{
     white-space: nowrap;
     margin: 0 auto;
     width:1200px;
-    padding: 20px 0 20px;
-
+    padding: 20px 0 45px;
 }
 
 .let-us-connect li{
@@ -391,6 +390,17 @@ header{
     border-radius: 10px;
 }
 
+.let-us-connect-greeting {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 50px 0 30px;
+}
+
+@media screen and (max-width: 450px){
+    .let-us-connect-greeting{
+        font-size: 25px;
+    }
+}
 footer{
     padding: 5px 0px;
     background-color:#FF0BAC;
@@ -1306,3 +1316,42 @@ span.tech-skills{
 
 }
 
+.coding-exp {
+    background-color:  #fdf1f6;
+    font-size: 18px;
+    padding: 100px 0px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.coding-exp-cycle{
+    width: 80%;
+    margin: 0px 10%;    
+}
+
+.coding-exp-cycle img{
+    transform: scale(0.8);    
+}
+
+.coding-exp-cycle-greeting{
+    font-size: 45px;
+}
+
+.coding-exp-skills{
+    text-align: center;
+    vertical-align: top;
+    width: 80%;
+    padding: 20px 10%;
+}
+
+.coding-exp-skills li{
+    vertical-align: top;
+    display: inline-block;
+    width: 24%;
+    font-weight: 600;
+}
+
+.coding-exp-skills li img{
+    width: 100px;
+    height: 100px;
+}
