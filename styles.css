@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
   }
   
 body::-webkit-scrollbar-track {
-    background: rgba(128, 128, 128, 0.292);        /* color of the tracking area */
+    background: rgba(128, 128, 128, 0);        /*color of the tracking area */
   }
   
 body::-webkit-scrollbar-thumb {
@@ -29,13 +29,13 @@ header{
     z-index: 1;
     left: 0;
     top: 0;
-    background-color:#FF0BAC;
+    background-color:#FF3EA5;
     /* background-color: #CE2384; */
     height: 70px;
     width: 100%;
 }
 .home-button{
-    background-color:#FF0BAC;
+    background-color:#FF3EA5;
     height:50px;
     text-align:left;
     display: inline-block;
@@ -78,7 +78,7 @@ header{
     text-align:center;
     font-weight: 600;
     color: white;
-    background-color:#FF0BAC;
+    background-color:#FF3EA5;
     padding: 24px 0px 22px;
 }
 
@@ -88,7 +88,7 @@ header{
 }
 
 .nav div a:hover{
-    color: #FF0BAC;
+    color: #FF3EA5;
     background-color: white;
 
 }
@@ -266,7 +266,7 @@ header{
 
 }
 .web-dd-para .web-dd-greeting{
-    color: #FF0BAC;
+    color: #FF3EA5;
     font-size: 30px;
 }
 .web-dd-para{
@@ -302,7 +302,7 @@ background-color: ghostwhite;
     vertical-align:top;
 }
 .nav-brief-para .nav-brief-greeting{
-    color: #FF0BAC;
+    color: #FF3EA5;
     font-size: 45px;
 }
 .nav-brief-para{
@@ -405,7 +405,7 @@ background-color: ghostwhite;
 }
 footer{
     padding: 5px 0px;
-    background-color:#FF0BAC;
+    background-color:#FF3EA5;
     color: white;
     text-align: center;
     font-size: 15px;
@@ -714,13 +714,13 @@ div.about-me-image{
     display: inline-block;
     width: 20%;
     margin: 0.5%;
-    border: 2px solid #FF0BAC;
+    border: 2px solid #FF3EA5;
     border-radius: 6px;
 }
 
 .edu-summary ul li div.degree{
     font-weight:bold;
-    background-color:#FF0BAC;
+    background-color:#FF3EA5;
     color: white;
     font-size: 20px;
 }
@@ -1180,8 +1180,8 @@ div.about-me-image{
 ul.project-tile{
     height: 230px;
     padding: 10px 1%;
-    border: 1px solid #FF0BAC;
-    border-left: 8px solid #FF0BAC;
+    border: 1px solid #FF3EA5;
+    border-left: 8px solid #FF3EA5;
     margin-bottom: 60px;
 }
 
@@ -1214,7 +1214,7 @@ span.title{
 }
 
 span.type{
-    color: #FF0BAC;
+    color: #FF3EA5;
     font-weight: 600;
     font-size: 16px;
 }
