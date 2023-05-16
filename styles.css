@@ -1158,10 +1158,12 @@ div.about-me-image{
 .work-summary{
     text-align: center;
     font-weight: bold;
-    color:#7B163E;
-    font-size: 50px;
     width: 70vw;
     margin: 30px 15vw;
+}
+.work-summary strong{
+    font-size: 50px;
+    color:#7B163E;
 }
 
 .work-summary p{
