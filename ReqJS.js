@@ -1,3 +1,4 @@
+console.log("hi this message is from the website");
 $(document).ready(function(){
     $(".nav-menu").on("click", function(){
         $(".nav").toggleClass("open");

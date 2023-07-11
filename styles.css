@@ -1414,3 +1414,121 @@ span.tech-skills{
         padding: 10px;
     }
 }
+
+.calc-body{
+    background-color: black;
+    /* background-color: #FCF8F6; */
+    margin: 0;
+}
+
+.calc-heading{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    text-align: center;
+    color:#00BEC5;
+    /* color: #0ddbe6; */
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.calc {
+    text-align: center;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+.calc-base{
+    background-color: #050833;
+    /* background-color: rgb(219, 216, 216); */
+    width: 55vw;
+    height: 60vh;
+    padding: 2% 0%;
+    margin: 10px 22vw 20px;
+    border-radius: 3px;
+}
+
+.calc input {
+    background-color: rgba(52, 73, 94, 0.5);
+    /* background-color:#FCF8F6; */
+    color: #ecf0f1;
+    /* color: black; */
+    text-align: right;
+    width: 90%;
+    height: 15%;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+    border: none;
+}
+.calc table{
+    margin-left: auto;
+    margin-right: auto;
+    height: 75%;
+    width: 92%;
+}
+
+.calc table td{
+    width: 20%;
+}
+
+.calc button {
+    border: none;
+    background-color: #54086B;
+    /* background-color: #FCF8F6; */
+    color: white;
+    /* color: black; */
+    width: 95%;
+    height: 90%;
+    /* padding: 7% 2%; */
+    margin: 1%;
+    border-radius: 3px;
+    /* font-weight: 300; */
+    font-size: 28px;
+}
+.calc .optr{
+    color:#00BEC5;
+    /* color: #0ddbe6; */
+}
+
+.calc .dot-optr{
+    font-weight: bold;
+}
+
+.calc .equal-btn{
+    background-color: #00BEC5;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+@media screen and (max-width:900px){
+    .calc-base{
+        width: 65vw;
+        margin: 10px 17vw 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .calc-base{
+        width: 90vw;
+        margin: 10px 4vw 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .calc-heading{
+        font-size: 45px;
+    }
+}
+
+button:active {
+    /*On click scale down the button for press effect */
+    transform: scale(0.92);
+}
+
+button:hover {
+    cursor: pointer;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
+}
