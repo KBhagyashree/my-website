@@ -34,39 +34,45 @@
             <div class="calc-heading">
                 Calculator
             </div>
+            <div class="calc-features">
+                <label class="toggle">
+                    <input type="checkbox" class="toggle-input" id="theme-selector">
+                    <div class="toggle-fill"></div>
+                </label>
+            </div>
             <div class="calc">
                 <div class="calc-base">
-                    <input type="text" name="screen" id="answer" readonly>
+                    <input type="text" name="expression" id="expr" readonly>
                     <table>
                         <tr>
-                            <td><button class="optr">(</button></td>
-                            <td><button class="optr">)</button></td>                        
-                            <td><button class="optr">%</button></td>
-                            <td><button class="optr">C</button></td>
+                            <td><button>(</button></td>
+                            <td><button>)</button></td>                        
+                            <td><button>%</button></td>
+                            <td><button>C</button></td>
                         </tr>
                         <tr>
-                            <td><button>7</button></td>
-                            <td><button>8</button></td>
-                            <td><button>9</button></td>
-                            <td><button class="optr">/</button></td>
+                            <td><button class="oprnd">7</button></td>
+                            <td><button class="oprnd">8</button></td>
+                            <td><button class="oprnd">9</button></td>
+                            <td><button>/</button></td>
                         </tr>
                         <tr>
-                            <td><button>4</button></td>
-                            <td><button>5</button></td>
-                            <td><button>6</button></td>
-                            <td><button class="optr">x</button></td>
+                            <td><button class="oprnd">4</button></td>
+                            <td><button class="oprnd">5</button></td>
+                            <td><button class="oprnd">6</button></td>
+                            <td><button>x</button></td>
                         </tr>
                         <tr>
-                            <td><button>1</button></td>
-                            <td><button>2</button></td>
-                            <td><button>3</button></td>
-                            <td><button class="optr">-</button></td>
+                            <td><button class="oprnd">1</button></td>
+                            <td><button class="oprnd">2</button></td>
+                            <td><button class="oprnd">3</button></td>
+                            <td><button>-</button></td>
                         </tr>
                         <tr>
-                            <td><button>0</button></td>
+                            <td><button class="oprnd">0</button></td>
                             <td><button class="dot-optr">.</button></td>                        
                             <td><button class="equal-btn">=</button></td>
-                            <td><button class="optr">+</button></td>
+                            <td><button>+</button></td>
                         </tr>
                     </table>
                 </div>
@@ -90,4 +96,5 @@
             © 2023 Bhagyashree Khairnar. All rights reserved.
         </footer>
     </body>
+    <script src="calc.js"></script>
 </html>

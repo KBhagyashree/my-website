@@ -1418,7 +1418,8 @@ span.tech-skills{
 .calc-body{
     background-color: black;
     /* background-color: #FCF8F6; */
-    margin: 0;
+    margin: 0;    
+    transition: all ease 0.5s;
 }
 
 .calc-heading{
@@ -1430,6 +1431,48 @@ span.tech-skills{
     /* color: #0ddbe6; */
     font-size: 55px;
     font-weight: 700;
+}
+
+.calc-features{
+    padding: 10px 0px 20px;
+    text-align: center;
+}
+
+.toggle{
+    --width: 60px;
+    --height: calc(var(--width)/2);
+    --border-radius: calc(var(--height));
+    display: inline-block;
+    cursor: pointer;
+}
+.toggle-input{
+    display:none;
+}
+.toggle-fill{
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background-color: rgba(52, 73, 94, 0.5);
+    border: 2px solid #00BEC5;
+    transition: background 0.5s;
+}
+.toggle-input:checked ~ .toggle-fill{    
+    background-color: white;
+}
+.toggle-fill::after{    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#00BEC5;
+    width: var(--height);
+    height: var(--height);
+    border-radius: var(--border-radius);  
+    transition: transform 0.5s;  
+}
+.toggle-input:checked ~ .toggle-fill::after{
+    transform: translateX(var(--height));
 }
 
 .calc {
@@ -1454,11 +1497,14 @@ span.tech-skills{
     color: #ecf0f1;
     /* color: black; */
     text-align: right;
-    width: 90%;
+    width: 88%;
     height: 15%;
+    padding-right: 2%;
     margin-bottom: 0.5rem;
     border-radius: 3px;
     border: none;
+    outline: none;
+    font-size: 28px;
 }
 .calc table{
     margin-left: auto;
@@ -1475,23 +1521,23 @@ span.tech-skills{
     border: none;
     background-color: #54086B;
     /* background-color: #FCF8F6; */
-    color: white;
+    color:#00BEC5;
     /* color: black; */
     width: 95%;
     height: 90%;
     /* padding: 7% 2%; */
     margin: 1%;
     border-radius: 3px;
-    /* font-weight: 300; */
     font-size: 28px;
 }
-.calc .optr{
-    color:#00BEC5;
+.calc .oprnd{
+    color: white;   
     /* color: #0ddbe6; */
 }
 
 .calc .dot-optr{
     font-weight: bold;
+    color: white;
 }
 
 .calc .equal-btn{
@@ -1521,7 +1567,7 @@ span.tech-skills{
 }
 
 button:active {
-    /*On click scale down the button for press effect */
+    /*On click scale down the button for the button press effect */
     transform: scale(0.92);
 }
 
