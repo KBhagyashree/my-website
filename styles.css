@@ -1583,10 +1583,10 @@ button:hover {
     height: 50px;
 }
 .rqg-body{
-    height: 90vh;    
+    height: 80vh;    
     position: relative; 
     --img-width: 100%;
-    --img-height: 90vh;
+    --img-height: 80vh;
     --base-factor: 0.12;   
     --quote-factor: 0.1;
 }
@@ -1665,7 +1665,8 @@ button:hover {
 
 @media screen and (max-width: 450px){
     .rqg-quote{
-        font-size: 25px;    
+        font-size: 25px;   
+        font-family: 'DM Serif Text', serif; 
     }    
     .rqg-body button{
         font-size: 15px;
