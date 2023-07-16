@@ -1578,3 +1578,96 @@ button:hover {
     transition: all 0.5s ease;
     -o-transition: all ease 0.5s;
 }
+
+.rqg-header-padding{
+    height: 50px;
+}
+.rqg-body{
+    height: 90vh;    
+    position: relative; 
+    --img-width: 100%;
+    --img-height: 90vh;
+    --base-factor: 0.12;   
+    --quote-factor: 0.1;
+}
+
+.rqg-body img{
+    width: var(--img-width);
+    height: var(--img-height);
+    object-fit: cover;
+}
+
+.rqg-quote-base{
+    position: absolute;
+    top: calc(var(--base-factor)*var(--img-height));
+    bottom: calc(var(--base-factor)*var(--img-height));
+    left: calc(var(--base-factor)*var(--img-width));
+    right: calc(var(--base-factor)*var(--img-width));
+    background-color: white;
+    height: calc((1-(2*var(--base-factor)))*var(--img-height));
+    width: calc((1-(2*var(--base-factor)))*var(--img-width));
+    opacity: 80%;
+    /* vertical-align: middle; */
+}
+.rqg-quote{
+    position: absolute;
+    top: calc(var(--quote-factor)*var(--img-height));
+    left: calc(var(--quote-factor)*var(--img-width));
+    right: calc(var(--quote-factor)*var(--img-width));
+    text-align: center;
+    margin: auto;
+    font-size: 35px;      
+    font-family: 'DM Serif Text', serif;
+}
+
+.rqg-body button{
+    position: absolute;
+    bottom: calc((var(--base-factor) + var(--quote-factor))*var(--img-height));
+    left: calc(0.35*var(--img-width));
+    right: calc(0.35*var(--img-width));
+    padding: 15px;
+    background-color: rgb(29, 117, 249);
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px #c0bbbb;
+    font-family: 'Poppins', sans-serif;    
+}
+
+@media screen and (max-width: 1100px){
+    .rqg-body{
+        --base-factor: 0.08;
+        --quote-factor: 0.1;        
+    }
+    .rqg-body button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .rqg-body{
+        --base-factor: 0.08;
+        --quote-factor: 0.08;        
+    }
+    .rqg-quote{
+        font-size: 30px;    
+    }    
+    .rqg-body button{
+        font-size: 17px;
+    }
+    .rqg-body button{
+        left: calc(0.25*var(--img-width));
+        right: calc(0.25*var(--img-width));
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    .rqg-quote{
+        font-size: 25px;    
+    }    
+    .rqg-body button{
+        font-size: 15px;
+    }
+}
