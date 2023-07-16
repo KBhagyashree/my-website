@@ -139,19 +139,40 @@ const quotes = [
         quote: "If you are working on something that you really care about, you don’t have to be pushed. \
         The vision pulls you.",
         originator:"Steve Jobs"
-    }]
+    }];
+
+const bgImages = [
+    "rqg/sun.jpg",
+    "rqg/beachsunselt.jpg",
+    "rqg/buttefly3.jpg",
+    "rqg/butterfly1.jpg",
+    "rqg/butterfly2.jpg",
+    "rqg/cheetah.jpg",
+    "rqg/elephant.jpg",
+    "rqg/nature.jpg",
+    "rqg/redflowerbg.jpg",
+    "rqg/scenarybg.jpg"
+];
 
 let newQuoteReq = document.getElementById("get-new-quote-button");
 
-function getRandomQuote(){
-    let randomNum = Math.floor(Math.random()*quotes.length);
-    return quotes[randomNum];
+function getRandomArrIndex(arrLength){
+    return Math.floor(Math.random()*arrLength);
 }
 
 newQuoteReq.addEventListener("click", (e) => {
+    let randomArrIndex = 0;
     let randomQuote = {};
+    let randomBg = "";
+    let imgSrc = "";
     let quoteElement = 0;
-    randomQuote = getRandomQuote();
+    randomArrIndex = getRandomArrIndex(bgImages.length);
+    randomBg = bgImages[randomArrIndex];
+    imgSrc = document.querySelector(".rqg-bg-image");
+    console.log(imgSrc);
+    imgSrc.src = randomBg;
+    randomArrIndex = getRandomArrIndex(quotes.length);
+    randomQuote = quotes[randomArrIndex];
     quoteElement = document.querySelector(".rqg-quote");
     quoteElement.innerHTML = "“" + randomQuote.quote + "”<br>— " + randomQuote.originator; 
 });

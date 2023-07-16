@@ -1587,8 +1587,7 @@ button:hover {
     position: relative; 
     --img-width: 100%;
     --img-height: 90vh;
-    --base-size-factor: 0.76;
-    --base-factor: 0.12;
+    --base-factor: 0.12;   
     --quote-factor: 0.1;
 }
 
@@ -1605,8 +1604,8 @@ button:hover {
     left: calc(var(--base-factor)*var(--img-width));
     right: calc(var(--base-factor)*var(--img-width));
     background-color: white;
-    height: calc(var(--base-size-factor)*var(--img-height));
-    width: calc(var(--base-size-factor)*var(--img-width));
+    height: calc((1-(2*var(--base-factor)))*var(--img-height));
+    width: calc((1-(2*var(--base-factor)))*var(--img-width));
     opacity: 80%;
     /* vertical-align: middle; */
 }
@@ -1617,7 +1616,7 @@ button:hover {
     right: calc(var(--quote-factor)*var(--img-width));
     text-align: center;
     margin: auto;
-    font-size: 30px;      
+    font-size: 35px;      
     font-family: 'DM Serif Text', serif;
 }
 
@@ -1629,7 +1628,7 @@ button:hover {
     padding: 15px;
     background-color: rgb(29, 117, 249);
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     border-radius: 10px;
     box-shadow: 3px 3px #c0bbbb;
@@ -1638,29 +1637,37 @@ button:hover {
 
 @media screen and (max-width: 1100px){
     .rqg-body{
-        --base-size-factor: 0.84;
         --base-factor: 0.08;
         --quote-factor: 0.1;        
     }
-    .rqg-quote{
-        font-size: 27px;    
+    .rqg-body button{
+        font-size: 20px;
     }
-    
 }
 
 @media screen and (max-width: 750px){
     .rqg-body{
+        --base-factor: 0.08;
         --quote-factor: 0.08;        
     }
     .rqg-quote{
-        font-size: 24px;    
+        font-size: 30px;    
     }    
     .rqg-body button{
-        font-size: 15px;
+        font-size: 17px;
     }
     .rqg-body button{
         left: calc(0.25*var(--img-width));
         right: calc(0.25*var(--img-width));
     }
     
+}
+
+@media screen and (max-width: 450px){
+    .rqg-quote{
+        font-size: 25px;    
+    }    
+    .rqg-body button{
+        font-size: 15px;
+    }
 }
