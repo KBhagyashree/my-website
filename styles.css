@@ -1665,7 +1665,8 @@ button:hover {
 
 @media screen and (max-width: 450px){
     .rqg-quote{
-        font-size: 25px;   
+        font-size: 25px;  
+        font-family: 'Cookie', cursive; 
         /* font-family: 'Castoro', serif; */
     }    
     .rqg-body button{
