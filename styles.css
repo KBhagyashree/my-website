@@ -1616,8 +1616,8 @@ button:hover {
     right: calc(var(--quote-factor)*var(--img-width));
     text-align: center;
     margin: auto;
-    font-size: 35px;      
-    font-family: 'DM Serif Text', serif;
+    font-size: 44px;
+    font-family: 'Cookie', cursive;
 }
 
 .rqg-body button{
@@ -1651,7 +1651,7 @@ button:hover {
         --quote-factor: 0.08;        
     }
     .rqg-quote{
-        font-size: 30px;    
+        font-size: 38px;
     }    
     .rqg-body button{
         font-size: 17px;
@@ -1665,9 +1665,7 @@ button:hover {
 
 @media screen and (max-width: 450px){
     .rqg-quote{
-        font-size: 25px;  
-        font-family: 'Cookie', cursive; 
-        /* font-family: 'Castoro', serif; */
+        font-size: 30px;
     }    
     .rqg-body button{
         font-size: 15px;
