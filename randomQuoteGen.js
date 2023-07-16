@@ -163,16 +163,20 @@ function getRandomArrIndex(arrLength){
 newQuoteReq.addEventListener("click", (e) => {
     let randomArrIndex = 0;
     let randomQuote = {};
-    let randomBg = "";
-    let imgSrc = "";
     let quoteElement = 0;
-    randomArrIndex = getRandomArrIndex(bgImages.length);
-    randomBg = bgImages[randomArrIndex];
-    imgSrc = document.querySelector(".rqg-bg-image");
-    console.log(imgSrc);
-    imgSrc.src = randomBg;
     randomArrIndex = getRandomArrIndex(quotes.length);
     randomQuote = quotes[randomArrIndex];
     quoteElement = document.querySelector(".rqg-quote");
     quoteElement.innerHTML = "“" + randomQuote.quote + "”<br>— " + randomQuote.originator; 
 });
+
+//Background automatically refreshes every 15 seconds
+window.setInterval(function(){
+    let randomArrIndex = 0;
+    let randomBg = "";
+    let imgSrc = "";
+    randomArrIndex = getRandomArrIndex(bgImages.length);
+    randomBg = bgImages[randomArrIndex];
+    imgSrc = document.querySelector(".rqg-bg-image");
+    imgSrc.src = randomBg;
+    }, 15000);
