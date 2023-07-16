@@ -1583,10 +1583,10 @@ button:hover {
     height: 50px;
 }
 .rqg-body{
-    height: 90vh;    
+    height: 80vh;    
     position: relative; 
     --img-width: 100%;
-    --img-height: 90vh;
+    --img-height: 80vh;
     --base-factor: 0.12;   
     --quote-factor: 0.1;
 }
