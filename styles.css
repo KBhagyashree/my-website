@@ -1671,3 +1671,98 @@ button:hover {
         font-size: 15px;
     }
 }
+
+.timer-body{
+    background-color: #C8F4F9;
+    height: 70vh;
+    text-align: center;
+    --width: 25vw;
+    --input-height: 10vh;
+    --input-padding: 160px;
+}
+
+.timer-input{
+    padding-top: var(--input-padding);
+    position: relative;    
+    width: var(--width);
+    
+}
+
+.timer-input input{
+    position: absolute;
+    top: 160px;
+    left: calc(50vw - (var(--width)/2));
+    width: var(--width);
+    height: var(--input-height);
+    background-color: white;
+    color: #3CACAE;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+.timer-buttons ul{
+    position: absolute;
+    top: calc(var(--input-padding) + var(--input-height));
+    left: calc(50vw - (var(--width)/2));;
+    white-space: nowrap;
+    width: var(--width);
+    padding: 0px;
+    text-align: center;
+}
+
+.timer-buttons li{
+    display: inline-block;
+    width: 48%;
+    margin: 0% 1%;
+}
+
+.timer-buttons button{
+    padding: 10px;
+    color: ivory;
+    background-color:#3CACAE;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;            
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 3px #c0bbbb;   
+
+}
+
+@media screen and (max-width: 1100px){
+    .timer-body{
+        --width: 35vw;
+    } 
+}
+
+@media screen and (max-width: 800px){
+    .timer-body{
+        --width: 50vw;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    .timer-body{
+        --width: 55vw;
+    } 
+    .timer-buttons ul{
+        white-space: normal;        
+    }
+    
+    .timer-buttons li{
+        width: 98%;
+        margin: 2% 1%;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .timer-body{
+        --width: 70vw;
+    } 
+    .timer-input input{
+        font-size: 40px;
+    }
+}
