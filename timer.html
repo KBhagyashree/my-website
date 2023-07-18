@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>        
-        <script src="ReqJS.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+               <script src="ReqJS.js" ></script>
     </head>
     <body>
         <!--Menu-->
@@ -30,21 +30,19 @@
                 <div><a href="#contact-me">Contact Me</a></div>
             </div>
         </header>
-        <div class="rqg-header-padding">
+               
+        <div class="timer-body">
+            <div class="timer-input">
+                <input type="time" step="1" name="timerValue" id="timer-value">
+                <div class="timer-buttons">
+                <ul>
+                    <li><button>Start</button></li>
+                    <li><button>Reset</button></li>
+                </ul>
+            </div>
         </div>
-        <div class="rqg-body">
-            <img src="rqg/scenarybg.jpg" class="rqg-bg-image">
-            <div class="rqg-quote-base">
-                <div class="rqg-quote">
-                    “If you are working on something that you really care about, 
-                    you don’t have to be pushed. The vision pulls you.”<br>
-                    — Steve Jobs                    
-                </div>
-            </div>                        
-            <button id="get-new-quote-button">
-                Generate New Quote
-            </button>            
         </div>
+      
         <div class="let-us-connect" id="contact-me">
             <div class="let-us-connect-greeting">
                 Contact Me
@@ -55,12 +53,13 @@
                 <li><a href="ResumeFEDBhagyashreeKhairnar.pdf"><img src="ResumeIcon.png" alt="resume icon"></a><div>Checkout my resume.</div></li>
                 <li><a href="mailto:bhagyashreekhairnar13@gmail.com?subject=Inquiry through website"><img src="GmailIcon.png" alt="gmail icon"></a><div>Email me.</div></li>
             </ul>
-        </div>
-
+        </div> 
+        
         <!--Additional Info-->
         <footer>
             © 2023 Bhagyashree Khairnar. All rights reserved.
         </footer>
     </body>
-    <script src="randomQuoteGen.js"></script>
+    <script src="timer.js"></script>
 </html>
+
