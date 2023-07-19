@@ -33,14 +33,34 @@
                
         <div class="timer-body">
             <div class="timer-input">
-                <input type="time" step="1" name="timerValue" id="timer-value">
-                <div class="timer-buttons">
-                <ul>
-                    <li><button>Start</button></li>
-                    <li><button>Reset</button></li>
+                <ul class="timer-input-value">
+                    <li class="ip">
+                        <input type="number" name="hours" id="hrs" min="0" max="24">                        
+                    </li>
+                    <li class="ip">
+                        <input type="number" name="minutes" id="mins" min="0" max="59">                        
+                    </li>                    
+                    <li class="ip">
+                        <input type="number" name="seconds" id="secs" min="0" max="59">
+                    </li>                    
+                    <li class="lbl">
+                        hours
+                    </li>
+                    <li class="lbl">
+                        mins
+                    </li>
+                    <li class="lbl">
+                        secs
+                    </li>
                 </ul>
+
+                <div class="timer-buttons">
+                    <ul>
+                        <li><button>Start</button></li>
+                        <li><button>Reset</button></li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>
       
         <div class="let-us-connect" id="contact-me">
