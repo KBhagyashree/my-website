@@ -1722,12 +1722,12 @@ button:hover {
 }
 
 li input{
-    font-size: 30px;
-    height: 90%;
-    width: 90%;
+    font-size: 20px;
+    /* height: 90%; */
+    /* width: 90%; */
     text-align: right;
-    border: none;
-    border-bottom: 1px solid #3CACAE;
+    /* border: none; */
+    /* border-bottom: 5px solid #3CACAE; */
     outline: none;
 }
 
@@ -1799,8 +1799,8 @@ li input{
         font-size: 18px;
     }
     li input{
-        font-size: 25px;
-        height: 90%;
-        width: 90%;
+        font-size: 20px;
+        /* height: 90%;
+        width: 90%; */
     }
 }
