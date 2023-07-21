@@ -1677,7 +1677,7 @@ button:hover {
     height: 70vh;
     text-align: center;
     --width: 25vw;
-    --input-height: 11vh;
+    --input-height: 15vh;
     --input-padding: 160px;
 }
 
@@ -1694,6 +1694,7 @@ button:hover {
     top: 160px;
     left: calc(50vw - (var(--width)/2));
     width: var(--width);
+    height: auto;
     height: var(--input-height);
     background-color: white;
     color: #3CACAE;
@@ -1703,34 +1704,66 @@ button:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     margin: 0px;
+    padding: 10px 0px 0px 0px;
+    border-radius: 5px;
+    --arrow-img-width: 12px;
+    --arrow-img-height: calc(0.87 * var(--arrow-img-width));
+}
+
+.timer-input-value li{
+    display: inline-block;    
+    border: 2px solid #3CACAE;
+    border-radius: 3px;
+    position: relative;
+    width: 25%;
+    margin: 0 1%;
+    height: 40%;
+}
+.timer-input-value li.lbl{    
+    font-size: 20px;
+    border: none;
+}
+
+.ip input{
+    font-size: 20px;
+    height: 90%;
+    width: 78%;
+    text-align: right;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     padding: 0px;
 }
-.timer-input-value li{
-    display: inline-block;
-}
-.timer-input-value li.ip{
-    width: 30%;
-    margin: 0 1%;
-    height: 50%;
-}
-
-.timer-input-value li.lbl{
-    width: 30%;
-    margin: 0 1%;
-    height: 50%;
-    font-size: 20px;
+.timer-input-value .up-arrow{
+    position: absolute;
+    bottom: 55%;
+    right: 0px;
+    width: var(--arrow-img-width);
+    height: var(--arrow-img-height);
 }
 
-li input{
-    font-size: 20px;
-    /* height: 90%; */
-    /* width: 90%; */
-    text-align: right;
-    /* border: none; */
-    /* border-bottom: 5px solid #3CACAE; */
-    outline: none;
+.timer-input-value .down-arrow{
+    position: absolute;
+    top: 55%;
+    right: 0px;
+    width: var(--arrow-img-width);
+    height: var(--arrow-img-height);
+}
+.timer-input-value img:active {
+    /*On click scale down the button for the button press effect */
+    transform: scale(0.7);
 }
 
+.timer-input-value img:hover {
+    cursor: pointer;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transition: all ease 0.5s;
+}
 .timer-buttons ul{
     position: absolute;
     top: calc(var(--input-padding) + var(--input-height));
@@ -1791,16 +1824,14 @@ li input{
     .timer-body{
         --width: 80vw;
     } 
-    .timer-input-value li.ip{
+    .timer-input-value li{
         width: 25%;
     }
     .timer-input-value li.lbl{
-        width: 25%;
         font-size: 18px;
     }
-    li input{
+    .ip input{
         font-size: 20px;
-        /* height: 90%;
-        width: 90%; */
+        width: 73%;
     }
 }
