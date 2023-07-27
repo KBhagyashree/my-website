@@ -10,10 +10,13 @@ function initTimer(){
         input.value = "00";
         input.readOnly = false;
         input.addEventListener("change", (e)=>{
-            if (e.target.value < e.target.min)
-                e.target.value = e.target.min;
-            else if (e.target.value > e.target.max)
-                e.target.value = e.target.max;        
+            let min = parseInt(e.target.min);
+            let max = parseInt(e.target.max);
+            let value = parseInt(e.target.value);
+            if (value < min)
+                e.target.value = "00";
+            else if (value > max)
+                e.target.value = max;        
             console.log(e);        
         });
     }
