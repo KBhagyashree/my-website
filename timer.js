@@ -13,10 +13,10 @@ function initTimer(){
             let min = parseInt(e.target.min);
             let max = parseInt(e.target.max);
             let value = parseInt(e.target.value);
-            if (value < min)
-                e.target.value = min;
+            if (isNaN(value) || value < min)
+                e.target.value = e.target.min;
             else if (value > max)
-                e.target.value = max;    
+                e.target.value = e.target.max;    
             else if (value >= 0 && value <=9)
                 e.target.value = "0" + value; 
             else
