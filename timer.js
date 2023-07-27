@@ -13,11 +13,14 @@ function initTimer(){
             let min = parseInt(e.target.min);
             let max = parseInt(e.target.max);
             let value = parseInt(e.target.value);
-            if (value == 0 || value < min)
-                e.target.value = "00";
+            if (value < min)
+                e.target.value = min;
             else if (value > max)
-                e.target.value = max;        
-            console.log(e);        
+                e.target.value = max;    
+            else if (value >= 0 && value <=9)
+                e.target.value = "0" + value; 
+            else
+                e.target.value = value;      
         });
     }
 }
