@@ -1694,7 +1694,6 @@ button:hover {
     top: 160px;
     left: calc(50vw - (var(--width)/2));
     width: var(--width);
-    height: auto;
     height: var(--input-height);
     background-color: white;
     color: #3CACAE;
@@ -1714,56 +1713,38 @@ button:hover {
     display: inline-block;    
     border: 2px solid #3CACAE;
     border-radius: 3px;
-    position: relative;
-    width: 25%;
+    position: relative;    
+}
+
+.timer-input-value li.ip{
+    width: 20%;
     margin: 0 1%;
     height: 40%;
+}
+.timer-input-value li.semi-colon{
+    width: 3%;
+    height: 40%;
+    border: none;
 }
 .timer-input-value li.lbl{    
     font-size: 20px;
     border: none;
+    width: 20%;
+    margin: 6px 1% 0px;
+    height: 30%;
+    vertical-align: top;
 }
 
 .ip input{
     font-size: 20px;
     height: 90%;
-    width: 78%;
-    text-align: right;
-    border-radius: 3px;
+    width: 90%;
+    text-align: center;
     border: none;
     outline: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
     padding: 0px;
 }
-.timer-input-value .up-arrow{
-    position: absolute;
-    bottom: 55%;
-    right: 0px;
-    width: var(--arrow-img-width);
-    height: var(--arrow-img-height);
-}
 
-.timer-input-value .down-arrow{
-    position: absolute;
-    top: 55%;
-    right: 0px;
-    width: var(--arrow-img-width);
-    height: var(--arrow-img-height);
-}
-.timer-input-value img:active {
-    /*On click scale down the button for the button press effect */
-    transform: scale(0.7);
-}
-
-.timer-input-value img:hover {
-    cursor: pointer;
-    -moz-transition: all ease 0.5s;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -o-transition: all ease 0.5s;
-}
 .timer-buttons ul{
     position: absolute;
     top: calc(var(--input-padding) + var(--input-height));
