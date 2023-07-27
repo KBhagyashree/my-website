@@ -13,7 +13,7 @@ function initTimer(){
             let min = parseInt(e.target.min);
             let max = parseInt(e.target.max);
             let value = parseInt(e.target.value);
-            if (value < min)
+            if (value == 0 || value < min)
                 e.target.value = "00";
             else if (value > max)
                 e.target.value = max;        
