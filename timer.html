@@ -35,19 +35,19 @@
             <div class="timer-input">
                 <ul class="timer-input-value">
                     <li class="ip">
-                        <input type="text" name="hours" id="hours">                          
+                        <input type="number" name="hours" id="hours" min="00" max="99">                          
                     </li>
                     <li class="semi-colon">
                         :
                     </li>  
                     <li class="ip">
-                        <input type="text" name="minutes" id="mins">                                 
+                        <input type="number" name="minutes" id="mins" min="00" max="59">                                 
                     </li>  
                     <li class="semi-colon">
                         :
                     </li>                  
                     <li class="ip">
-                        <input type="text" name="seconds" id="secs"> 
+                        <input type="number" name="seconds" id="secs" min="00" max="59"> 
                     </li>                    
                     <li class="lbl">
                         hours
@@ -63,8 +63,8 @@
                 </ul>
                 <div class="timer-buttons">
                     <ul>
-                        <li><button>Start</button></li>
-                        <li><button>Reset</button></li>
+                        <li><button id="start-stop">Start</button></li>
+                        <li><button id="reset">Reset</button></li>
                     </ul>
                 </div>
             </div>
