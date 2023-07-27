@@ -1709,6 +1709,11 @@ button:hover {
     --arrow-img-height: calc(0.87 * var(--arrow-img-width));
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
 .timer-input-value li{
     display: inline-block;    
     border: 2px solid #3CACAE;
