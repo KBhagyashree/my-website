@@ -66,12 +66,12 @@ resetBtn.addEventListener("click", (e)=>{
 });
 
 startStopBtn.addEventListener("click", (e) => {
-    thours.readOnly = true;
-    tmins.readOnly = true;
-    tsecs.readOnly = true;
-    totalTimeMSecs = (hours * 3600 + mins * 60 + secs) * 1000;
-
-    if(totalTimeMSecs){
+    
+    if(hours || mins || secs){
+        thours.readOnly = true;
+        tmins.readOnly = true;
+        tsecs.readOnly = true;
+        totalTimeMSecs = (hours * 3600 + mins * 60 + secs) * 1000;
         // timer 'START' 
         if (timerStartFlag) {
             timerStartFlag = 0;
