@@ -1,5 +1,5 @@
 
-const timerValue = document.getElementsByTagName("input");
+const timerInputs = document.getElementsByTagName("input");
 const startStopBtn = document.getElementById("start-stop");
 const resetBtn = document.getElementById("reset");
 const thours = document.getElementById("hours");
@@ -16,7 +16,7 @@ let alarm = new Audio("IphoneRadarSound.mp3");
 initTimer();
 
 function initTimer(){
-    for (input of timerValue){
+    for (input of timerInputs){
         input.value = "00";
         input.readOnly = false;
         input.addEventListener("change", (e)=>{
@@ -46,7 +46,7 @@ function initTimer(){
 }
 
 function reset() { 
-    for (input of timerValue){
+    for (input of timerInputs){
         input.readOnly = false;
         input.value = "00";
     }
@@ -70,53 +70,58 @@ startStopBtn.addEventListener("click", (e) => {
     tmins.readOnly = true;
     tsecs.readOnly = true;
     totalTimeMSecs = (hours * 3600 + mins * 60 + secs) * 1000;
-    console.log(hours + ":" + mins + ":" + secs);   
-    console.log(totalTimeMSecs); 
 
-    if (timerStartFlag) {
-        timerStartFlag = 0;
-        e.target.innerText = "Stop";
+    if(totalTimeMSecs){
+        // timer 'START' 
+        if (timerStartFlag) {
+            timerStartFlag = 0;
+            e.target.innerText = "Stop";
 
-        intervalId = setInterval(() => {
-            if(secs > 0)
-                secs--;
-            else if(secs == 0 && mins > 0){
-                mins--;
-                secs = 59;
-            }
-            else if(mins == 0 && hours > 0){
-                hours--;
-                mins = 59;
-                secs = 59;
-            }
-            // timer countdown display
-            if (secs >= 0 && secs <=9)
-                tsecs.value = "0" + secs;
-            else
-                tsecs.value = secs;
+            // countdown every 1 sec
+            intervalId = setInterval(() => {
+                // countdown secs, mins, hours
+                if(secs > 0)
+                    secs--;
+                else if(secs == 0 && mins > 0){
+                    mins--;
+                    secs = 59;
+                }
+                else if(mins == 0 && hours > 0){
+                    hours--;
+                    mins = 59;
+                    secs = 59;
+                }
+                // timer countdown display
+                if (secs >= 0 && secs <=9)
+                    tsecs.value = "0" + secs;
+                else
+                    tsecs.value = secs;
 
-            if (mins >= 0 && mins <=9)
-                tmins.value = "0" + mins;
-            else
-                tmins.value = mins;
+                if (mins >= 0 && mins <=9)
+                    tmins.value = "0" + mins;
+                else
+                    tmins.value = mins;
 
-            if (hours >= 0 && hours <=9)
-                thours.value = "0" + hours;
-            else
-                thours.value = hours;
-            
-        }, 1000);
-        timeoutId = setTimeout(() => {
-            alarm.play();
-            reset();            
-        }, totalTimeMSecs);
-    }
-    else{
-        timerStartFlag = 1;
-        startStopBtn.innerText = "Start";
-        clearInterval(intervalId);
-        clearTimeout(timeoutId);
-    }    
+                if (hours >= 0 && hours <=9)
+                    thours.value = "0" + hours;
+                else
+                    thours.value = hours;
+                
+            }, 1000);
+
+            // Stop 1 sec countdown after total time is out
+            timeoutId = setTimeout(() => {
+                // timer COMPLETE
+                alarm.play();
+                reset();            
+            }, totalTimeMSecs);
+        }
+        // timer 'STOP'
+        else{
+            timerStartFlag = 1;
+            startStopBtn.innerText = "Start";
+            clearInterval(intervalId);
+            clearTimeout(timeoutId);
+        }
+    }   
 });
-
-console.log(timerValue);
