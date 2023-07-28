@@ -70,9 +70,8 @@ startStopBtn.addEventListener("click", (e) => {
     tmins.readOnly = true;
     tsecs.readOnly = true;
     totalTimeMSecs = (hours * 3600 + mins * 60 + secs) * 1000;
-    console.log(hours + ":" + mins + ":" + secs);   
-    console.log(totalTimeMSecs); 
 
+    if(totalTimeMSecs){
     if (timerStartFlag) {
         timerStartFlag = 0;
         e.target.innerText = "Stop";
