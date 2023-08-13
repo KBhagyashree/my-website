@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bhagyashree's Portfolio</title>
+        <link rel="icon" type="images/png" href="BLogoPinkBg100px100px.png" /> 
+        <link rel="stylesheet" href="styles.css">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+               <script src="ReqJS.js" ></script>
+    </head>
+    <body>
+        <!--MENU-->
+        <header>
+            <div  class="home-button">
+                <a href="index.html"><img src="BLogoWhiteBg100px100px.png"></a>                
+            </div>
+            <div class="nav-menu">
+                <a><img src="NavIconNoBg.png"></a>
+            </div>
+            <div class="nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="aboutme.html">About Me</a></div>
+                <div><a href="education.html">Education</a></div>
+                <div><a href="workexp.html">Work</a></div>
+                <div><a href="#contact-me">Contact Me</a></div>
+            </div>
+        </header>       
+        <div id="sform-brief">
+            <h1 id="sform-brief-title">
+                Subscription Form
+            </h1>
+            <p id="sform-brief-text">
+                HTML Forms is an excellent way to collect useful data from the users.                 
+                The 'Subscription Form' is a form that we typically see as a pop-up when we open an e-commerce website.                
+                It urges the user to subscribe for weekly newsletters & updates. Please give it a try!<br><br>                                                
+            </p>
+            Technologies used:
+                <ul>
+                    <li>HTML5: Form elements </li>
+                    <li>CSS3: Form stying & layout (CSS grids)</li>
+                    <li>JS: Form validation (Regular expression, DOM Manipulation)</li>
+                </ul> 
+        </div>
+        <!-- SUBSRIPTION FORM-->
+        <div id="container">
+            <!-- CONTAINER GRID MARGINS -->
+            <div id="cm1"></div>
+            <div id="cm2"></div>
+            <div id="cm3"></div>
+            <div id="cm4"></div>
+            <!-- MAIN -->
+            <div id="branding-image">
+                <img class="sunglasses-image" src="sunglasses.jpeg">
+            </div>
+            <div id="subscription-section">                
+                <h1>SUBSCRIBE TODAY!</h1>
+                <p>
+                    Subscribe today to be the first one to know<br>
+                    latest offers & discounts. What's more? <br>
+                    Get cool styling tips, trends & news related to fashion<br>
+                    emailed straight to your inbox.<br>
+                    Hurry!
+                </p>
+                <form id="subscriptionform" novalidate>
+                <div id="subscription-form">
+                    <!-- SUBSCRIPTION FORM GRID MARGINS -->
+                    <div id="fm1"></div>
+                    <div id="fm2"></div>
+                    <div id="fm3"></div>
+                    <div id="fm4"></div>
+                    <!-- USER DETAILS -->                    
+                    <!-- First Name -->
+                    <div id="fn-label" class="sf-label">
+                        <label>
+                            First Name:
+                        </label>                      
+                    </div>
+                    <div id="fn-input" class="sf-input">
+                        <input type="text" name="firstname" id="firstname" placeholder="eg. Jane" required>
+                    </div>
+                    <!-- Last Name -->
+                    <div id="ln-label" class="sf-label">
+                        <label>
+                            Last Name:
+                        </label>
+                    </div>
+                    <div id="ln-input" class="sf-input">
+                        <input type="text" name="lastname" id="lastname" placeholder="eg. Doe" required>                        
+                    </div>
+                    <!-- Mobile No. -->
+                    <div id="mob-label" class="sf-label">
+                        <label>
+                            Mobile:
+                        </label>  
+                    </div>
+                    <div id="mob-input" class="sf-input">
+                        <input type="number"  name="mobile" id="mobile" placeholder="eg. 9888865555" required>
+                    </div>
+                    <!-- Email ID -->
+                    <div id="email-label" class="sf-label">
+                        <label>
+                            Email:
+                        </label>  
+                    </div>
+                    <div id="email-input" class="sf-input">
+                        <input type="email" name="email" id="email" placeholder="eg. janedoe@yahoo.com" required>
+                    </div>
+                    <!-- Form Validation Error Message -->
+                    <div id="err-msg">
+                        *All fields required
+                    </div>
+                    <!-- Subscribe Button -->
+                    <div id="subscribe-button">
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>   
+                </form>                 
+                </div>
+            </div>           
+    </body>
+    <script src="subscriptionForm.js"></script>
+</html>
