@@ -1,244 +1,53 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CSS grid</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bhagyashree's Portfolio</title>
+        <link rel="icon" type="images/png" href="BLogoPinkBg100px100px.png" /> 
+        <link rel="stylesheet" href="styles.css">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Cookie&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
-        <style>            
-            body{
-                margin: 0px;
-            }
-            #container div{
-                background-color: black;                
-            }
-            #container{
-                width: 100%;              
-                display: grid;
-                grid-template-columns: 1fr 2fr 3fr 1fr;
-                grid-template-rows: repeat(3, minmax(100px, auto));
-                grid-template-areas:
-                    "cm1  cm1  cm1 cm1"
-                    "cm2  bi   ss  cm3"
-                    "cm4  cm4  cm4 cm4";
-                --rb-img-ht: 600px;
-                --h1-font-size: 40px;
-                --p-font-size: 18px;
-            }
-            #cm1{
-                grid-area: cm1;
-            }
-            #cm2{
-                grid-area: cm2;
-            }
-            #cm3{
-                grid-area: cm3;
-            }
-            #cm4{
-                grid-area: cm4;
-            }
-            #branding-image{
-                grid-area: bi;
-            }
-            #subscription-section{
-                grid-area: ss;                
-            }
-            div#subscription-section{    
-                background-color: white;
-                height: var(--rb-img-ht);
-                font-family: 'EB Garamond', serif;
-                text-align: center;
-            }  
-            div#branding-image{               
-                height: var(--rb-img-ht);
-                text-align: right;
-            }            
-            .sunglasses-image {
-                height: var(--rb-img-ht);
-                max-width: 100%;  
-            }   
-            #container div#subscription-section h1{               
-                height: 10%;
-                margin: 0px;
-                padding: 7% 20px 0px;
-                font-weight: 600;
-                font-size: var(--h1-font-size);
-            }                      
-            #container div#subscription-section p{
-                height: 20%;
-                margin: 0px;
-                padding: 5% 20px 0px;
-                font-weight: 400;
-                font-size: var(--p-font-size);
-            }            
-            #subscription-form{
-                width: 100%;              
-                display: grid;
-                grid-template-columns: 1fr 1.5fr 3.5fr 1fr;
-                grid-template-rows: repeat(8, minmax(40px, auto));
-                grid-template-areas:
-                    "fm1 fm1   fm1   fm1"
-                    "fm2 fnlbl fnip  fm3"
-                    "fm2 lnlbl lnip  fm3"
-                    "fm2 mlbl  mip   fm3"
-                    "fm2 elbl  eip   fm3"
-                    "fm2 em    em    fm3"
-                    "fm2 btn   btn   fm3"
-                    "fm4 fm4   fm4   fm4";     
-            }
-            #subscription-form div{
-                background-color: white; 
-            }
-            #fm1{
-                grid-area: fm1;
-            }
-            #fm2{
-                grid-area: fm2;
-            }
-            #fm3{
-                grid-area: fm3;
-            }
-            #fm4{
-                grid-area: fm4;
-            }
-            #fn-label{
-                grid-area: fnlbl;
-            }
-            #fn-input{
-                grid-area: fnip;
-            }
-            #ln-label{
-                grid-area: lnlbl;
-            }
-            #ln-input{
-                grid-area: lnip;
-            }
-            #mob-label{
-                grid-area: mlbl;
-            }
-            #mob-input{
-                grid-area: mip;
-            }
-            #email-label{
-                grid-area: elbl;
-            }
-            #email-input{
-                grid-area: eip;
-            }
-            #err-msg{
-                grid-area: em;
-            }
-            #subscribe-button{
-                grid-area: btn;
-            }
-            #subscription-form div.sf-label{
-                text-align: left;
-                padding-right: 10px; 
-                font-weight: 600;
-                font-size: var(--p-font-size);               
-            }
-            #subscription-form div.sf-input input{
-                width: 96%;  
-                height: 50%;              
-            }
-            #subscription-form div#err-msg{
-                color: grey;
-                text-align: left;
-            }
-            #subscription-form div#subscribe-button button{
-                border: none;
-                outline: none;
-                padding: 10px 20px;
-                background-color: red;
-                color: white;
-                font-family: 'EB Garamond', serif;
-                font-size: var(--p-font-size);
-            }
-            @media screen and (max-width: 1200px){
-                #container{
-                    grid-template-columns: 0.5fr 2.5fr 3.5fr 0.5fr;
-                }
-            }
-            @media screen and (max-width: 1000px){
-                #container{
-                    grid-template-columns: 0fr 3fr 4fr 0fr;
-                }
-            }
-            @media screen and (max-width: 800px){
-                #container{
-                    grid-template-columns: 0fr 3fr 4fr 0fr;
-                    --h1-font-size: 32px;
-                    --p-font-size: 16px;
-                    --rb-img-ht: 550px;
-                }
-                #subscription-form{
-                    grid-template-columns: 0.5fr 1.5fr 4.5fr 0.5fr;
-                }
-            }
-            @media screen and (max-width: 700px){
-                #container div#subscription-section h1{ 
-                    padding: 5% 20px 0px;
-                }                      
-                #container div#subscription-section p{
-                    padding: 3% 20px 0px;
-                }
-                #container div#subscription-section br{
-                    content: " ";
-                }             
-                #container{
-                    grid-template-columns: 0fr 2fr 5fr 0fr;
-                    --h1-font-size: 32px;
-                    --p-font-size: 16px;
-                    --rb-img-ht: 450px;
-                }
-            }
-            @media screen and (max-width: 550px){
-                #container{
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, minmax(100px, auto));
-                grid-template-areas:
-                    "bi"
-                    "ss";
-                --rb-img-ht: auto;
-                }
-                #container div#branding-image{
-                    text-align: center;
-                }
-                #subscription-form{
-                    grid-template-columns: 0.5fr 2fr 4fr 0.5fr;
-                }
-                div#subscription-section{   
-                    height: 550px;
-                }
-                #container div#subscription-section h1{ 
-                    padding: 10% 20px 0px;
-                }                      
-                #container div#subscription-section p{
-                    padding: 5% 20px 0px;
-                }
-            }
-            /* Chrome, Safari, Edge, Opera */
-                input::-webkit-outer-spin-button,
-                input::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
-
-            /* Firefox */
-            input[type=number] {
-                -moz-appearance: textfield;
-            }
-            /* input:valid{
-                outline-color: rgb(24, 192, 24);
-            }
-            input:invalid{
-                outline-color: red;
-            } */
-        </style>
+               <script src="ReqJS.js" ></script>
     </head>
     <body>
+        <!--MENU-->
+        <header>
+            <div  class="home-button">
+                <a href="index.html"><img src="BLogoWhiteBg100px100px.png"></a>                
+            </div>
+            <div class="nav-menu">
+                <a><img src="NavIconNoBg.png"></a>
+            </div>
+            <div class="nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="aboutme.html">About Me</a></div>
+                <div><a href="education.html">Education</a></div>
+                <div><a href="workexp.html">Work</a></div>
+                <div><a href="#contact-me">Contact Me</a></div>
+            </div>
+        </header>       
+        <div id="sform-brief">
+            <h1 id="sform-brief-title">
+                Subscription Form
+            </h1>
+            <p id="sform-brief-text">
+                HTML Forms is an excellent way to collect useful data from the users.                 
+                The 'Subscription Form' is a form that we typically see as a pop-up when we open an e-commerce website.                
+                It urges the user to subscribe for weekly newsletters & updates. Please give it a try!<br><br>                                                
+            </p>
+            Technologies used:
+                <ul>
+                    <li>HTML5: Form elements </li>
+                    <li>CSS3: Form stying & layout (CSS grids)</li>
+                    <li>JS: Form validation (Regular expression, DOM Manipulation)</li>
+                </ul> 
+        </div>
+        <!-- SUBSRIPTION FORM-->
         <div id="container">
             <!-- CONTAINER GRID MARGINS -->
             <div id="cm1"></div>
@@ -312,8 +121,7 @@
                     </div>   
                 </form>                 
                 </div>
-            </div>
-           
+            </div>           
     </body>
     <script src="subscriptionForm.js"></script>
 </html>
