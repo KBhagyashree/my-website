@@ -1,0 +1,24 @@
+{
+    "blogs" : [
+        {
+            "title" : "A Walk to Remember",
+            "body"  : "Set in North Carolina, \"A Walk To Remember\" follows the rite of passage of a jaded, aimless high school senior (Shane West) who falls in love with a guileless young woman (Mandy Moore) he and his friends once scorned. The two develop a powerful and inspirational relationship in which they discover truths that take most people a lifetime to learn.",
+            "author": "Nicholas Sparks",
+            "id"    : "0"
+        },
+        {
+            "title" : "Harry Potter Review",
+            "body"  : "Harry Potter (Daniel Radcliffe) thinks he is an ordinary boy celebrating his eleventh birthday, but he is far from right. A giant named Hagrid (Robbie Coltrane) appears, and gives Harry the all-important news. He is a wizard. Now his journey in life gets more intense as he travels to Hogwarts school of witchcraft and wizardry to learn the trade of being a wizard. Here, he meets his friends who would be by his side for many years to come. Ron Weasley (Rupert Grint) is not a very brave friend and Hermione (Emma Watson) is the smart friend. But not everything is quiet at Hogwarts as Harry suspects someone is planning to steal the Philosopher's/Sorcerer's Stone.",
+            "author": "Simon",
+            "id"    : "1"
+        },
+        {
+            "title" : "The Hare & The Tortoise Story",
+            "body"  : "Once a Hare and tortoise lived in a forest. The hare was very proud of his fast speed. He made fun of the tortoise for his slow speed. The tortoise challenged the hare to have a race with him. The hare accepted the challenge.The race started. The crow was the referee. The hare ran very fast. The tortoise was left far behind. The hare stopped to take rest under a tree. He fell asleep.The tortoise passed him and reached the winning post. The hare woke up and ran as fast as he could. He saw that the tortoise was already at the winning post. He won the race.",
+            "author": "Aesops Fables",
+            "id"    : "2"
+        }
+
+    ]
+      
+}
